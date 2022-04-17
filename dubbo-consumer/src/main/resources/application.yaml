@@ -1,0 +1,12 @@
+# 应用名称
+spring:
+  application:
+    name: dubbo-consumer
+dubbo:
+  application:
+    # 服务的名称
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+server:
+  port: 8082

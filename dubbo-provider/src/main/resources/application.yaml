@@ -1,0 +1,16 @@
+# 应用名称
+spring:
+  application:
+    name: dubbo-provider
+dubbo:
+  application:
+    # 向注册中心注册时的姓名
+    name: dubbo-provider
+  registry:
+    # 注册地址
+    address: zookeeper://127.0.0.1:2181
+  scan:
+    # 提供的服务需要扫描的路径
+    base-packages: com.zt.study.dubbo.provide.service
+server:
+  port: 8081
